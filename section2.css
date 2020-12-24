@@ -1,14 +1,42 @@
 .section2 {
     background-color: aqua;
     width: auto;
-    height: 1000px;
+    height: 800px;
+}
+
+.profile {
+    margin-top: 15px;
+    font-size: 40px;
+    color: #000000;
 }
 
 .section2 img {
-    width: 100px;
-    height: 100px;
-    background: red;
+    position: absolute;
+    width: 430px;
+    height: 430px;
     border-radius: 50%;
     object-fit: cover;
     margin: 4.6% auto;
+    border: 1px solid #0000001A;
   }
+
+.profiletext {
+    color: #000000;
+    font: normal normal bold 42px/67px Helvetica Neue;
+    letter-spacing: 0px;
+}
+
+.one {
+    width: 155%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.readmorebtn {
+    margin: 15% 70%;
+    width: 180px;
+    height: 80px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    color: white;
+}

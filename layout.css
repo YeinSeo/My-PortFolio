@@ -5,6 +5,7 @@
 #wrap{
     min-width: 1280px;
     overflow: hidden;
+    /* width: 1920px; */
 }
   
 @font-face {

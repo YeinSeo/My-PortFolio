@@ -1,0 +1,14 @@
+.section2 {
+    background-color: aqua;
+    width: auto;
+    height: 1000px;
+}
+
+.section2 img {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 4.6% auto;
+  }

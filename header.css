@@ -1,0 +1,29 @@
+header {
+    position: fixed;
+    display: flex;
+    height: 50px;
+    font-weight: bold;
+    /* background-color : #243B5B; */
+    /* z-index: 9; */
+    width: 100%;
+    /* padding: auto; */
+  }
+  
+  .header-btns a {
+    /* display: block; */
+    float: left;
+    color: #DFC9A4;
+    text-align: center;
+    border: 2px solid #DFC9A4;
+    width: 70px;
+    /* height: 20px; */
+    margin-left: 55px;
+    /* line-height: 35px; */
+    transition: border 0.5s, background-color 0.5s, color 0.5s;
+  }
+    
+  .header-btns a:hover {
+    background-color: #DFC9A4;
+    /* border: 2px solid #B3C9E7; */
+    color : #243B5B;
+  }

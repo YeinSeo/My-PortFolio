@@ -1,0 +1,29 @@
+.header-btns {
+    margin : auto;
+}
+
+#wrap{
+    min-width: 1280px;
+    overflow: hidden;
+}
+  
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+}
+  
+body {
+    position: relative;
+    font-family: 'MaruBuri-Regular';
+    font-weight: normal;
+    font-style: normal;
+}  
+  
+.inner-container {
+    width : 1250px;
+    margin : auto;
+}
+
+#section2, #section3, #section1  {
+    padding-top: 80px;
+}

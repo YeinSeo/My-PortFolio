@@ -1,0 +1,11 @@
+.section1 {
+    background-color:gray;
+    width: auto;
+    height: 1000px;
+}
+.section1 img {
+    width: auto;
+    height: 1000px;
+    object-fit: cover;
+    margin: auto;
+}

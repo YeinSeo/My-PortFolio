@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, p,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	/* background: transparent; */
+}
+
+html {
+	overflow-y:scroll;
+	-webkit-text-size-adjust: 100%;
+}
+
+html, body {
+	width:100%;
+	font-size:15px; line-height:1.76em;
+	background-color: #fff;
+	/* word-break:break-all;
+	*word-break:break-all;
+	-ms-word-break:break-all;  */
+	margin:0 auto;
+}
+
+body {
+	font-size: 1.0em;
+	font-family: 'Noto Sans KR', '나눔 고딕', 'nanum gothic', '맑은 고딕','Malgun Gothic','verdana','arial','dotum', '돋움', sans-serif;
+	color: #222;
+
+}
+
+select::-ms-expand,
+select::-ms-expand {
+	display:none;
+}
+html[data-ie-ver="8"] select,
+html[data-ie-ver="9"] select {
+	padding-left:0;
+	padding-right:0;
+	background:none;
+}
+
+input[type="password"] {
+	font-family: sans-serif;
+}
+input[type="text"],
+input[type="password"] {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+textarea {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-overflow-scrolling:touch;
+	-webkit-overflow-scrolling:touch;
+	-moz-overflow-scrolling:touch;
+	-o-overflow-scrolling:touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a {text-decoration: none;}
+
+input {
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	vertical-align: top;
+}
+
+th {
+	font-size:1.0em;
+}
+
+img, fieldset {
+	border:0px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+hr {
+	border:0;
+	height:1px;
+	background:#ddd;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend, caption {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+em {font-style:normal;}
+ins {text-decoration: none;}
+
+/*images*/
+img {max-width:100%;}

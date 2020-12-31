@@ -3,27 +3,18 @@
     overflow: hidden;
 }
   
-@font-face {
-    font-family: 'MaruBuri-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
-}
-  
 body {
     position: relative;
     font-family: 'MaruBuri-Regular';
     font-weight: normal;
     font-style: normal;
-}  
-  
-.inner-container {
-    width : 1250px;
-    margin : auto;
 }
 
 .CTP {
     background-color: coral;
     height: 1000px;
 }
+
 .ctptext {
     color: black;
     text-align: right;
@@ -33,13 +24,46 @@ body {
     font-size: xx-large;
 }
 
-.CLASS, .PERSONAL, .TEAM {
-width: 200px;
-height: 200px;
-background: #FFDE9C 0% 0% no-repeat padding-box;
-border: 1px solid #707070;
-border-radius: 50%;
-margin-left: 10%;
+.CTPbox button {
+    width: 200px;
+    height: 200px;
+    background: #FFDE9C;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    margin: 10% 5%;
+}
+
+.CLASS {
+    display: inline-table;
+    overflow: hidden;
+}
+
+.CLASS:hover {
+    background-color: black;
+    opacity: 50%;
+    color: white;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }  
+
+.CLASS::before {
+    display:block;
+    content: '';
+    transition: all .35s;
+    z-index: 1;
+    top:0;
+}
+
+
+.CLASS span {
+    position: absolute;
+    z-index: 2;
 }
 
 .CLASSSsection {

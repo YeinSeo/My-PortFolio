@@ -1,13 +1,15 @@
 .section2 {
-    background-color: aqua;
+    background-color: red;
     width: auto;
     height: 800px;
+    z-index: 3;
 }
 
 .profile {
     margin-top: 15px;
     font-size: 40px;
     color: #000000;
+    font-weight: 600;
 }
 
 .section2 img {
@@ -22,13 +24,18 @@
 
 .profiletext {
     color: #000000;
-    font: normal normal bold 42px/67px Helvetica Neue;
     letter-spacing: 0px;
 }
 
 .one {
     width: 155%;
-    margin: 0 auto;
+    margin: 10% auto;
+    text-align: center;
+    font-size: 50px;
+}
+.two {
+    width: 155%;
+    margin:10% auto;
     text-align: center;
 }
 

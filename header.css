@@ -1,29 +1,194 @@
-header {
-    position: fixed;
-    display: flex;
-    height: 50px;
-    font-weight: bold;
-    /* background-color : #243B5B; */
-    /* z-index: 9; */
-    width: 100%;
-    /* padding: auto; */
-  }
+:root {
+  --text-color: #fcd0cd;
+  --background-color: #fe4c40;
+  --accent-color: #ffffff;
+  /* --accent-color: #f0f4f5; */
+}
+
+.navbar__logo a {
+  text-decoration: none;
+  color: var(--accent-color)
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+.navbar {
+  font-weight: 600;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 4px 12px;
+  position: fixed;
+  width: 100%;
+}
   
-  .header-btns a {
-    /* display: block; */
-    float: left;
-    color: #DFC9A4;
-    text-align: center;
-    border: 2px solid #DFC9A4;
-    width: 70px;
-    /* height: 20px; */
-    margin-left: 55px;
-    /* line-height: 35px; */
-    transition: border 0.5s, background-color 0.5s, color 0.5s;
-  }
+.navbar__logo {
+  font-size: 24px;
+}
+
+.navbar__logo i {
+  color: var(--accent-color)
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar__menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.navbar__menu li {
+  padding: 8px 12px;
+}
     
-  .header-btns a:hover {
-    background-color: #DFC9A4;
-    /* border: 2px solid #B3C9E7; */
-    color : #243B5B;
+.navbar__menu a:hover, .navbar__icons:hover {
+    /* background-color: var(--accent-color);
+    border-radius: 4px; */
+    color: var(--accent-color);
+    transition: color 0.5s;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__icons i {
+  padding: auto;
+  padding-right: 0;
+}
+
+/* 반응형 코드 */
+
+.navbar__toogleBtn {
+  display: none;
+  position: absolute;
+  right: 70px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
   }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__toogleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+
+  /* 메뉴버튼 동작 */
+
+  /* input[class="navbar__menuicon"] {
+    display: none;
+    position: absolute;
+  }
+  input[class="navbar__menuicon"] + label {
+    display: block;
+    height: 60px;
+    width: 40px;
+    cursor:pointer;
+    background-color: #d49466;
+  }
+  input[class="navbar__menuicon"] + label span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #d49466;
+    transition: all .35s;
+  }
+  input[class="navbar__menuicon"] + label span:nth-child(1) {
+    top:0;
+  }
+  input[class="navbar__menuicon"] + label span:nth-child(2) {
+    top:50%;
+    transform: translateY(-50%);
+  }
+  input[class="navbar__menuicon"] + label span:nth-child(3) {
+    bottom:0;
+  }
+  input[class="navbar__menuicon"]:checked + label span:nth-child(1) {
+    top:50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  input[class="navbar__menuicon"]:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  input[class="navbar__menuicon"]:checked + label span:nth-child(3) {
+    bottom:50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .navbar__menu li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar__icons {
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .navbar__menuicon label span {
+      display: block;
+    }
+  
+    .navbar__menu.active,
+    .navbar__icons.active {
+      display: flex;
+    } */
+}

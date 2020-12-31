@@ -4,31 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1400">
-    <title>서예인 PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>SYI PORTFOLIO</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="section1.css">
     <link rel="stylesheet" href="section2.css">
     <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
     <link rel="stylesheet" href="layout.css">
+    <script src="https://kit.fontawesome.com/805f171708.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <div id="wrap">
-        <header>
-            <div class="header-btns">
-                <a href="#section1" class="header-btn1">Main</a>
-                <a href="#section2" class="header-btn2">About me</a>
-                <a href="#section3" class="header-btn3">Projects</a>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <!-- <i class="fab fa-github-alt"></i> -->
+                <a href="#section1">ㅇㅅㅇ</a>
             </div>
-        </header>
+
+            <ul class="navbar__menu">
+                <li><a href="#section1" class="header-btn1">Main</a></li>
+                <li><a href="#section2" class="header-btn2">About me</a></li>
+                <li><a href="#section3" class="header-btn3">Projects</a></li>
+                <li><a href="#section4" class="header-btn4">Contact</a></li>
+            </ul>
+
+            <ul class="navbar__icons">
+                <li><i class="far fa-envelope"></i>
+                    <a href="mailto: seoyeoin0409@naver.com" title="이메일 바로가기"></a>
+                </li>
+            </ul>
+
+            <a href="#" class="navbar__toogleBtn"><i class="fas fa-bars"></i></a>
+            <!-- <input type="checkbox" class="navbar__menuicon">
+            <label for="navbar__menuicon">
+                <span>fbhmjgj</span>
+                <span></span>
+                <span></span>
+            </label> -->
+
+        </nav>
 
         <div class="sections">
             <!-- 섹션1 -->
             <div class="section1" id="section1">
-                <img src="지방이 1.jpg">
                 <div class="inner-container">
+                    <div class='banner'>
+                        <img src="imges/미모지마스크눈동글.jpg">
+                        <div id='bg'></div>
+                        <script type="text/javascript">
+                            let bg = document.querySelector('#bg');
+                            window.addEventListener('scroll', function () {
+                                let value = window.scrollY;
+                                bg.style.backgroundSize = 100 + value * 2 + "px";
+                            })
+                        </script>
+                        <div class="hi">
+                            안녕하세요! <br> 저는 서예인입니다 :)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="inner-container">
                     <div class="Itsme">
                         언제나 (배가 고픈..?) <br>서예인입니다
                     </div>
@@ -37,81 +80,97 @@
                         seoyein0409@naver.com<br>
                         seoyein@kakao.com
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> -->
 
-        <!-- 섹션2 -->
-        <div class="section2" id="section2">
-            <div class="inner-container">
-                <div class="profile">
-                    프로필
-                </div>
-                <img src="지방이 1.jpg">
-                <div class="profiletext">
-                    <div class="one">
-                        Seo YeIn
+            <!-- 섹션2 -->
+            <div class="section2" id="section2">
+                <div class="inner-container">
+                    <div class="profile">
+                        프로필
                     </div>
-                    <!-- <div class="two">
-                        Seo YeIn
-                    </div> -->
-                    <button class="readmorebtn">
-                        readmore
-                    </button>
+                    <img src="imges/미모지마스크윙크.jpg">
+                    <div class="profiletext">
+                        <div class="one">
+                            Seo YeIn
+                        </div>
+                        <button class="readmorebtn">
+                            readmore
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- 섹션3 -->
-        <div class="section3" id="section3">
-            <div class="inner-container">
-                <div class="projects">
-                    프로젝트 언덕
+            <!-- 섹션3 -->
+            <div class="section3" id="section3">
+                <div class="inner-container">
+                    <div class="projects">
+                        프로젝트
+                    </div>
+                    <div class="gallerylist">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="screen">
+                                        <div class="top">코딩</div>
+                                        <div class="bottom">효과</div>
+                                        <img src="./imges/clip20201230_1132_30_605.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="projectbox">
+                        <a href="aproject.html" class="w19M3">
+                            <img src='imges/지방이 1.jpg'>
+                            <div class="text1">
+                                <p>Until It Brown 웹사이트</p>
+                            </div>
+                            <div class="text2">
+                                [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
+                                ...
+                            </div>
+                            <div class="text3">
+                                <p>2020-8-12</p>
+                            </div>
+                        </a>
+                        <a href="bproject.html" class="w19M4">
+                            <img src='imges/지방이 1.jpg'>
+                            <div class="text1">
+                                <p>디랩 또는 흥미 프로젝트</p>
+                            </div>
+                            <div class="text2">
+                                [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
+                                ...
+                            </div>
+                            <div class="text3">
+                                <p>2020-8-12</p>
+                            </div>
+                        </a>
+                        <div class="w20M1">
+                            <div class="thecard">
+                                <a href="cproject.html">
+                                    <div class="thefornt">
+                                        <img src='imges/KakaoTalk_20201226_231130180.jpg'>
+                                        front of card
+                                    </div>
+                                    <div class="theback">back of card</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
-                <div class="projectbox">
-                    <a href="aproject.html" class="w19M3">
-                        <img src='지방이 1.jpg'>
-                        <div class="text1">
-                            <p>더 많은 사람들에게 창덕궁의 가치를 알리려면?</p>
-                        </div>
-                        <div class="text2">
-                            [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
-                            ...
-                        </div>
-                        <div class="text3">
-                            <p>2020-8-12</p>
-                        </div>
-                    </a>
-                    <a href="bproject.html" class="w19M4">
-                        <img src='지방이 1.jpg'>
-                        <div class="text1">
-                            <p>더 많은 사람들에게 창덕궁의 가치를 알리려면?</p>
-                        </div>
-                        <div class="text2">
-                            [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
-                            ...
-                        </div>
-                        <div class="text3">
-                            <p>2020-8-12</p>
-                        </div>
-                    </a>
-                    <a href="cproject.html" class="w20M1">
-                        <img src='지방이 1.jpg'>
-                        <div class="text1">
-                            <p>더 많은 사람들에게 창덕궁의 가치를 알리려면?</p>
-                        </div>
-                        <div class="text2">
-                            [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
-                            ...
-                        </div>
-                        <div class="text3">
-                            <p>2020-8-12</p>
-                        </div>
-                    </a>
+            </div>
+
+            <!-- 섹션4 -->
+            <div class="section4" id="section4">
+                <div class="inner-container">
+                    <div class="email">
+                        <a href="mailto: seoyeoin0409@naver.com" title="이메일 바로가기">seoyeoin0409@naver.com</a>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 

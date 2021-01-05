@@ -12,42 +12,32 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="section1.css">
-    <link rel="stylesheet" href="section2.css">
+    <!-- <link rel="stylesheet" href="section2.css"> -->
     <link rel="stylesheet" href="section3.css">
     <link rel="stylesheet" href="section4.css">
     <link rel="stylesheet" href="layout.css">
     <script src="https://kit.fontawesome.com/805f171708.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
+    <script src="door.js" defer></script>
 </head>
 
 <body>
     <div id="wrap">
         <nav class="navbar">
             <div class="navbar__logo">
-                <!-- <i class="fab fa-github-alt"></i> -->
-                <a href="#section1">ㅇㅅㅇ</a>
+                <a href="#section1">
+                    <i href="#section1" i class="fab fa-android"></i></a>
             </div>
 
             <ul class="navbar__menu">
-                <li><a href="#section1" class="header-btn1">Main</a></li>
-                <li><a href="#section2" class="header-btn2">About me</a></li>
-                <li><a href="#section3" class="header-btn3">Projects</a></li>
-                <li><a href="#section4" class="header-btn4">Contact</a></li>
-            </ul>
-
-            <ul class="navbar__icons">
-                <li><i class="far fa-envelope"></i>
-                    <a href="mailto: seoyeoin0409@naver.com" title="이메일 바로가기"></a>
-                </li>
+                <li><a href="#section1" class="header-btn1">메인</a></li>
+                <li><a href="profile.html" class="header-btn2">내 소개</a></li>
+                <li><a href="projecthome.html" class="header-btn3">프로젝트</a></li>
+                <li><a href="email.html" class="header-btn4">이메일</a></li>
             </ul>
 
             <a href="#" class="navbar__toogleBtn"><i class="fas fa-bars"></i></a>
-            <!-- <input type="checkbox" class="navbar__menuicon">
-            <label for="navbar__menuicon">
-                <span>fbhmjgj</span>
-                <span></span>
-                <span></span>
-            </label> -->
+
 
         </nav>
 
@@ -55,7 +45,119 @@
             <!-- 섹션1 -->
             <div class="section1" id="section1">
                 <div class="inner-container">
-                    <div class='banner'>
+                    <div id="doorWrap">
+                        <div id="door">
+                            <img src="./imges/문이거다대지-8.png" alt="door" id="doorImage">
+                        </div>
+                        <div id="chaeyoung"></div>
+                    </div>
+                    <audio id="knockknock" src="현관문 노크4.MP3" style="display: none"></audio>
+                    <div class="firsttext">
+                        반가워요! <br>저는 성장하기 위해 <br>도전하는 사람 <br>
+                        <a href="profile.html">서예인</a>입니다.
+                    </div>
+                    <a href="class.html">
+                        <img src="./imges/선인장1대지-5.png" class="flower1">
+                    </a>
+                    <a href="personal.html">
+                        <img src="./imges/선인장2대지-5.png" class="flower2">
+                    </a>
+                    <a href="team.html">
+                        <img src="./imges/선인장3대지-5.png" class="flower3">
+                    </a>
+                    </img>
+                </div>
+            </div>
+            <div class="floor"></div>
+        </div>
+
+        <!-- 섹션2 -->
+        <!-- <div class="section2" id="section2">
+            <div class="inner-container">
+                <div class="profile">
+                    프로필
+                </div>
+                <div class="background">
+
+                    <div class="profiletext">
+                        <div class="one">
+                            안녕하세요~ 감성과 감정을 통해 세상을 바라보는 디자이너 서예인입니다.
+                        </div>
+                        <div class="hanja">
+                            서예인
+                        </div>
+                        <div class="two">
+                            생년월일 : 2004년 4월 9일 (양력)
+                            <br>
+                            직업 : 거꾸로캠퍼스 학생
+                            <br>
+                            연락처 : 궁금하면 500원
+                            <br>
+                            성격유형 : ENFP-A
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- 섹션3 -->
+        <!-- <div class="section3" id="section3">
+            <div class="grass">
+                <div class="inner-container">
+                    <div class="rock">
+                        <div class="project1">
+                            <div class="gallerylist">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="screen">
+                                                <div class="top">흥미를 쫓는 모험</div>
+                                                <div class="bottom">2020.1.15</div>
+                                                <img src="./imges/clip20201230_1132_30_605.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="project2">b</div>
+                                <div class="project3">c</div>
+                                <div class="project4">d</div>
+                                <div class="project5">e</div>
+                                <div class="project6">f</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+        <!-- 섹션4 -->
+        <!-- <div class="section4" id="section4">
+            <div class="inner-container">
+                <div class="email">
+                    <a href="mailto: seoyeoin0409@naver.com" title="이메일 바로가기">Thank you :)</a>
+
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
+
+
+
+<!-- <input type="checkbox" class="navbar__menuicon">
+            <label for="navbar__menuicon">
+                <span>fbhmjgj</span>
+                <span></span>
+                <span></span>
+            </label> -->
+
+
+
+<!-- <div class='banner'>
                         <img src="imges/미모지마스크눈동글.jpg">
                         <div id='bg'></div>
                         <script type="text/javascript">
@@ -68,10 +170,53 @@
                         <div class="hi">
                             안녕하세요! <br> 저는 서예인입니다 :)
                         </div>
-                    </div>
+                    </div> -->
+
+
+
+<!-- <div class="projectbox">
+    <a href="aproject.html" class="w19M3">
+        <img src='imges/지방이 1.jpg'>
+        <div class="text1">
+            <p>Until It Brown 웹사이트</p>
+        </div>
+        <div class="text2">
+            [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
+            ...
+        </div>
+        <div class="text3">
+            <p>2020-8-12</p>
+        </div>
+    </a>
+    <a href="bproject.html" class="w19M4">
+        <img src='imges/지방이 1.jpg'>
+        <div class="text1">
+            <p>디랩 또는 흥미 프로젝트</p>
+        </div>
+        <div class="text2">
+            [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
+            ...
+        </div>
+        <div class="text3">
+            <p>2020-8-12</p>
+        </div>
+    </a>
+    <div class="w20M1">
+        <div class="thecard">
+            <a href="cproject.html">
+                <div class="thefornt">
+                    <img src='imges/KakaoTalk_20201226_231130180.jpg'>
+                    front of card
                 </div>
-            </div>
-            <!-- <div class="inner-container">
+                <div class="theback">back of card</div>
+            </a>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- <div class="inner-container">
                     <div class="Itsme">
                         언제나 (배가 고픈..?) <br>서예인입니다
                     </div>
@@ -81,196 +226,3 @@
                         seoyein@kakao.com
                     </div>
                 </div> -->
-
-            <!-- 섹션2 -->
-            <div class="section2" id="section2">
-                <div class="inner-container">
-                    <div class="profile">
-                        프로필
-                    </div>
-                    <img src="imges/미모지마스크윙크.jpg">
-                    <div class="profiletext">
-                        <div class="one">
-                            Seo YeIn
-                        </div>
-                        <button class="readmorebtn">
-                            readmore
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 섹션3 -->
-            <div class="section3" id="section3">
-                <div class="inner-container">
-                    <div class="projects">
-                        개인 프로젝트
-                    </div>
-                    <div class="gallerylist">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <div class="screen">
-                                        <div class="top">코딩</div>
-                                        <div class="bottom">효과</div>
-                                        <img src="./imges/clip20201230_1132_30_605.png">
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div class="screen">
-                                        <div class="top">코딩</div>
-                                        <div class="bottom">효과</div>
-                                        <img src="./imges/clip20201230_1132_30_605.png">
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div class="screen">
-                                        <div class="top">코딩</div>
-                                        <div class="bottom">효과</div>
-                                        <img src="./imges/clip20201230_1132_30_605.png">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 섹션3-2 -->
-                <div class="section3-2" id="section3-2">
-                    <div class="inner-container">
-                        <div class="projects">
-                            팀 프로젝트
-                        </div>
-                        <div class="gallerylist">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <div class="screen">
-                                            <div class="top">코딩</div>
-                                            <div class="bottom">효과</div>
-                                            <img src="./imges/clip20201230_1132_30_605.png">
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <div class="screen">
-                                            <div class="top">코딩</div>
-                                            <div class="bottom">효과</div>
-                                            <img src="./imges/clip20201230_1132_30_605.png">
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <div class="screen">
-                                            <div class="top">코딩</div>
-                                            <div class="bottom">효과</div>
-                                            <img src="./imges/clip20201230_1132_30_605.png">
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 섹션3-3 -->
-                    <div class="section3-3" id="section3-3">
-                        <div class="inner-container">
-                            <div class="projects">
-                                수업 프로젝트
-                            </div>
-                            <div class="gallerylist">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <div class="screen">
-                                                <div class="top">코딩</div>
-                                                <div class="bottom">효과</div>
-                                                <img src="./imges/clip20201230_1132_30_605.png">
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="screen">
-                                                <div class="top">코딩</div>
-                                                <div class="bottom">효과</div>
-                                                <img src="./imges/clip20201230_1132_30_605.png">
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="screen">
-                                                <div class="top">코딩</div>
-                                                <div class="bottom">효과</div>
-                                                <img src="./imges/clip20201230_1132_30_605.png">
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- <div class="projectbox">
-                        <a href="aproject.html" class="w19M3">
-                            <img src='imges/지방이 1.jpg'>
-                            <div class="text1">
-                                <p>Until It Brown 웹사이트</p>
-                            </div>
-                            <div class="text2">
-                                [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
-                                ...
-                            </div>
-                            <div class="text3">
-                                <p>2020-8-12</p>
-                            </div>
-                        </a>
-                        <a href="bproject.html" class="w19M4">
-                            <img src='imges/지방이 1.jpg'>
-                            <div class="text1">
-                                <p>디랩 또는 흥미 프로젝트</p>
-                            </div>
-                            <div class="text2">
-                                [프로젝트 이야기] 더 많은 사람들에게 창덕궁의 가치를 알리려면? 거꾸로캠퍼스의 학생들은 여러가지 프로그램을 경험합니다. 개인의 관심에 따라 정한 주제를
-                                ...
-                            </div>
-                            <div class="text3">
-                                <p>2020-8-12</p>
-                            </div>
-                        </a>
-                        <div class="w20M1">
-                            <div class="thecard">
-                                <a href="cproject.html">
-                                    <div class="thefornt">
-                                        <img src='imges/KakaoTalk_20201226_231130180.jpg'>
-                                        front of card
-                                    </div>
-                                    <div class="theback">back of card</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                        </div>
-                    </div>
-
-                    <!-- 섹션4 -->
-                    <div class="section4" id="section4">
-                        <div class="inner-container">
-                            <div class="email">
-                                <a href="mailto: seoyeoin0409@naver.com" title="이메일 바로가기">seoyeoin0409@naver.com</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-</body>
-
-<footer>
-
-</footer>
-
-</html>

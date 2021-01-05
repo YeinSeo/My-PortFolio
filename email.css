@@ -1,0 +1,20 @@
+.background {
+    width: auto;
+    height: 100vh;
+    background: #FCEDDA
+  }
+.post img {
+  position: absolute;
+top: 185px;
+margin-left: 772px;
+width: 332px;
+height: 527px;
+}
+.ending {
+  padding-top: 505px;
+left: 154px;
+width: 711px;
+height: 123px;
+text-align: left;
+font: normal normal bold 45px/60px 'UNPGothicKS';
+}

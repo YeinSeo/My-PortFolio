@@ -1,59 +1,56 @@
 :root {
   --text-color: #fcd0cd;
-  --background-color: #fe4c40;
-  --accent-color: #ffffff;
+  --background-color: blue;
+  --accent-color:  #FCEDDA;
   /* --accent-color: #f0f4f5; */
 }
 
-.navbar__logo a {
+/* .navbar__logo a {
   text-decoration: none;
   color: var(--accent-color)
-}
+} */
 
 .navbar__menu a {
   text-decoration: none;
-  color: var(--text-color)
+  color:  #FCEDDA;
 }
 
 .navbar {
-  font-weight: 600;
+  font-weight: 700;
   z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
+  background-color: #ee4e34;
   padding: 4px 12px;
   position: fixed;
   width: 100%;
+  height: auto;
 }
   
 .navbar__logo {
-  font-size: 24px;
+  font-size: 35px;
+  padding-left: 20px;
 }
 
 .navbar__logo i {
-  color: var(--accent-color)
+  color:#008D45 ;
 }
 
 .navbar__menu {
   display: flex;
   list-style: none;
-  padding-left: 0;
-}
-.navbar__menu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  padding-left: 0s;
 }
 .navbar__menu li {
-  padding: 8px 12px;
+  padding: 8px 50px;
+  font-weight: 550;
 }
     
 .navbar__menu a:hover, .navbar__icons:hover {
     /* background-color: var(--accent-color);
     border-radius: 4px; */
-    color: var(--accent-color);
+    color: #ffffff;
     transition: color 0.5s;
 }
 

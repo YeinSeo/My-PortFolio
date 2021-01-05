@@ -1,0 +1,119 @@
+.grass {width: auto;
+    height: 2500px;
+    background-color: green;}
+    .rock {
+        top:5%; left: 50%;
+        margin-top: -100px; margin-left: -100px;
+        position: absolute;
+    }
+    .project1, .project2, .project3, .project4, .project5, .project6 {
+        position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    height: 246px;
+    width: 398px;
+    left: 50%;
+    }
+    .project2,.project4,.project6 {
+        left: 138px;
+    }
+    .project1 {
+        top: 149px;
+    }
+    .project2 {
+        top: 475px
+    }
+    .project3 {
+        top: 801px;
+        
+    }
+    .project4 {top: 1127px;
+    }
+    .project5 {top: 1453px;
+        
+    }
+    .project6 {top: 1779px;
+    }
+
+
+
+
+
+        .rock ul {
+            width: 100%;
+            height: 100%;
+        }
+        .rock ul > li {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .rock ul > li > a {
+            display: block;
+            width: auto;
+            text-decoration: none;
+            margin: 5px;
+        }
+        
+        .rock ul > li > a .screen {
+            position: relative;
+        }
+        
+        .rock ul > li > a .screen .top{
+            position: absolute;
+            bottom: 150%;
+            left: 30px;
+            z-index: 2;
+            color: #fff;
+            font-size: 26px;
+            font-weight: 900;
+            transition: all .35s;
+        }
+        
+        .rock ul > li > a .screen .bottom {
+            position: absolute;
+            top: 150%;
+            left: 30px;
+            z-index: 2;
+            color: #fff;
+            font-size: 12px;
+            transition: all .35s;
+        }
+        
+        .rock ul > li > a .screen img {
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+        }
+        
+        .rock ul > li > a h3 {
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        
+        .rock ul > li > a:hover .top {bottom:52%;}
+        
+        .rock ul > li > a:hover .bottom {top:52%;}
+        
+        .rock ul > li > a .screen::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.5);
+            z-index: 1;
+            opacity: 0;
+            transition: all .35s;
+        }
+        
+        .rock ul > li > a:hover .screen::after {
+            opacity: 1;
+        }

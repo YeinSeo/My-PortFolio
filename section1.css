@@ -5,70 +5,108 @@
 }
 
 .section1 {
-    background-color: white;
-    height: 1400px;
+    width: auto;
+  height: 100vh;
+  background: #FCEDDA
+}
+.firsttext {
+    padding-top: 122px;
+width: auto;
+text-align: right;
+font: normal normal 40px/70px 'UNPGothicKS';
+letter-spacing: 0px;
+color: #000000;
+right:155.6px;
+font-weight: 800;
+}
+.firsttext a {text-decoration: underline;
+    color: #ee4e34;
+    font-weight: 800;
 }
 
-.banner {
+
+#doorWrap {
     position: absolute;
-    /* position: fixed; */
-    width: 100%;
-    height: 100vh;
+    /* bottom: 10vh; */
+    transform: translateX(-50%);
+    background: #ad3d00;
+    clip: rect(-10vh, auto, 100vh, auto);
+    perspective: 100vw;
+    cursor: pointer;
+    margin-bottom: 0%;
+    margin-top: 91px;
+    left: 400px;
+;
 }
 
-.hi {
-    z-index: 10;
-    font-size: 40px;
-    text-align: center;
-    line-height: 140%;
-    width: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-    font-style:italic;
+#door {
+    transform-origin: 0% 50%;
+    transition: transform 1s ease-out;
+    background: #000;
+    margin-bottom: 0%;
+    /* top: 94px; */
+    z-index: 99;
 }
-.banner img {
+
+#doorImage {
+    display: block;
+    max-width: 90vw;
+    max-height: 88vh;
+    pointer-events: none;
+}
+
+#chaeyoung {
     position: absolute;
+    top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#bg {
-    width: 100%;
-    height: 100%;
-    background: white url("imges/heart.svg");
+    right: 0;
+    bottom: 0;
+    background-image: url(./imges/화면\ 캡처\ 2021-01-05\ 000947.png);
+    background-size: cover;
+    background-position: left bottom;
     background-repeat: no-repeat;
-    background-position: center;
-    mix-blend-mode: screen;
+    pointer-events: none;
+    transform: translateX(-200px);
+    transition: 1s linear;
+    z-index: -1;
 }
 
-
-/* .section1 {
-    background-color:gray;
-    width: auto;
-    height: 1000px;
+.doorOpened #chaeyoung {
+    transform: translateX(0);
+    cursor: none;
 }
-.section1 img {
-    width: auto;
-    height: 1000px;
-    object-fit: cover;
-    margin: auto;
-} */
 
-/* .Itsme {
+body.doorOpened #door {
+    transform: rotateY(-75deg);
+    cursor: pointer;
+}
+.flower1, .flower2, .flower3 {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 100%;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
+    cursor: pointer;
+}
+.flower1 {
+top: 561px;
+left: 668px;
+width: 114px;
+height: 218px;
 }
 
-.contects {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-} */
+.flower2 {
+    top: 632px;
+left: 822px;
+width: 91px;
+height: 147px;
+}
+
+.flower3 {
+    top: 551px;
+left: 946px;
+width: 125px;
+height: 228px;
+}
+
+.floor {
+    width: auto;
+    height: 200px;
+    background-color: #ee4e34;
+}

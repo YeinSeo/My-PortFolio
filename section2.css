@@ -1,14 +1,13 @@
 .section2 {
-    background-color: red;
+    background-color: #FCEDDA;
     width: auto;
-    height: 800px;
+    height: 600px;
     z-index: 3;
 }
 
 .profile {
-    margin-top: 15px;
     font-size: 40px;
-    color: #000000;
+    color: #F95700;
     font-weight: 600;
 }
 
@@ -23,7 +22,7 @@
   }
 
 .profiletext {
-    color: #000000;
+    color:#F95700;
     letter-spacing: 0px;
 }
 
@@ -31,14 +30,33 @@
     width: 155%;
     margin: 10% auto;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 700;
 }
 .two {
     width: 155%;
-    margin:10% auto;
+    margin:5% auto;
     text-align: center;
 }
-
+.three {
+    
+    width: 155%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 30px;
+}
+.hanja {
+    width: 155%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 50px;
+}
+.hanjaSM {
+    width: 155%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 30px;
+}
 .readmorebtn {
     margin: 15% 70%;
     width: 180px;

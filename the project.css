@@ -7,9 +7,9 @@
     flex-direction:column;
   }
   
-  .content1-img, .content2-img, .content3-img, .content4-img, .content5-img, .content6-img, .content7-img {
-
-  }
+/* .content10-img {
+margin-bottom: 50%;
+  } */
 .title {
     text-align: right;
     font-size:50px;
@@ -26,7 +26,7 @@
   width: auto;
   height: 500px;
   text-align: center;
-  background-color: burlywood;
+  background-color: wheat;
   margin-top: 10%;
 }
   /* button */

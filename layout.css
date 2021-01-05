@@ -9,14 +9,19 @@
   
 body {
     position: relative;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'UNPGothicKS';
 }
-  
+
 .inner-container {
     width : 1250px;
     margin : auto;
 }
-
 #section2 {
     padding-top: 80px;
+}
+@font-face {
+    font-family: 'UNPGothicKS';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/UNPGothicKS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

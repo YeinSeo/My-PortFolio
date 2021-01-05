@@ -1,0 +1,40 @@
+.background {
+    width: auto;
+    height: 100vh;
+    background: #FCEDDA
+  }
+.me img {
+    position: absolute;
+    top: 111px;
+    margin-left: 511px;
+    width: 308px;
+    height: 411px;
+}
+.info {
+    position: absolute;
+    top: 468px;
+    margin-left: 360px;
+    width: 711px;
+    height: 272px;
+    text-align: left;
+    font: normal normal  25px/50px 'UNPGothicKS';
+}
+.info p {
+    width: 100%;
+    height: 58px;
+    text-align: left;
+    font: normal normal bold 45px/50px 'UNPGothicKS';
+    letter-spacing: 0px;
+    color: #000000;
+}
+.floweropen, .floweropen2 {
+    position: absolute;
+width: 222px;
+height: 173px;
+top: 172px;
+margin-left: 922px;
+}
+.floweropen2 {
+    top: 544px;
+    margin-left: 0px;
+}

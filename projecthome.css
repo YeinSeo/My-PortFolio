@@ -1,0 +1,47 @@
+.background {
+  width: auto;
+  height: 100vh;
+  background: #FCEDDA
+}
+.class, .personal, .team {
+    position: absolute;
+    cursor: pointer;
+}
+.class {
+    top: 308px;
+margin-left: 237px;
+width: 230px;
+height: 440px;
+}
+.personal {
+    top: 451px;
+width: 184px;
+height: 298px;
+margin-left: 548px;
+}
+.team {
+    top: 288px;
+margin-left: 799px;
+width: 252px;
+height: 461px;
+}
+
+.projecthometext {
+    position: absolute;
+    width: 94px;
+    height: 58px;
+    font: normal normal 45px/60px 'UNPGothicKS';
+    color: #000000;
+}
+#text1 {
+    top: 230px;
+    margin-left: 305px;
+}
+#text2 {
+    top: 373px;
+    margin-left: 593px;
+}
+#text3 {
+    margin-left: 925px;
+    top: 210px;
+}

@@ -19,12 +19,29 @@ color: #000000;
 right:155.6px;
 font-weight: 800;
 }
-.firsttext a {text-decoration: underline;
-    color: #ee4e34;
-    font-weight: 800;
+.highlight {
+    display: inline-table;
+    overflow: hidden;
+    position: relative;
+    color:  #ee4e34;
 }
-
-
+.highlight::before {
+    content: "";
+    height: 5px;
+    width: 0;
+    background-color: #ffc5bc;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+}
+.firsttext:hover .highlight::before {
+    width: 100%;
+    background-color: #ee4e34;
+}
+.firsttext a {
+    color:  #ee4e34;
+}
 #doorWrap {
     position: absolute;
     transform: translateX(-50%);
@@ -35,9 +52,7 @@ font-weight: 800;
     margin-bottom: 0%;
     margin-top: 91px;
     left: 400px;
-;
 }
-
 #door {
     transform-origin: 0% 50%;
     transition: transform 1s ease-out;
@@ -45,14 +60,12 @@ font-weight: 800;
     margin-bottom: 0%;
     z-index: 99;
 }
-
 #doorImage {
     display: block;
     max-width: 90vw;
     max-height: 88vh;
     pointer-events: none;
 }
-
 #chaeyoung {
     position: absolute;
     top: 0;
@@ -68,12 +81,10 @@ font-weight: 800;
     transition: 1s linear;
     z-index: -1;
 }
-
 .doorOpened #chaeyoung {
     transform: translateX(0);
     cursor: none;
 }
-
 body.doorOpened #door {
     transform: rotateY(-75deg);
     cursor: pointer;
@@ -88,21 +99,18 @@ left: 668px;
 width: 114px;
 height: 218px;
 }
-
 .flower2 {
     top: 632px;
 left: 822px;
 width: 91px;
 height: 147px;
 }
-
 .flower3 {
     top: 551px;
 left: 946px;
 width: 125px;
 height: 228px;
 }
-
 .floor {
     width: auto;
     height: 200px;

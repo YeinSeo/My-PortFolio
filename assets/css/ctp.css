@@ -1,0 +1,77 @@
+.body {
+    
+    font-family: 'MaruBuri-Regular';
+}
+.background {
+    width: auto;
+    height: 100vh;
+    background: #FCEDDA
+  }
+.bigname {
+  padding-top: 61px;
+  left: 154px;
+  width: 700px;
+  height: 58px;
+  font: normal normal bold 50px/65px 'UNPGothicKS';
+  color: #000000;
+  font-weight: 550;
+}
+.aflower {
+    position: absolute;
+    top: 134px;
+margin-left: 519px;
+width: 252px;
+height: 482px}
+
+.background2 {
+    width: auto;
+    height: 100vh;
+    background: #d6874f;
+  }
+.leaf1, .leaf2, .leaf3 {
+    cursor: pointer;
+    position: absolute;
+}
+.leaf1{
+    top: 928px;
+margin-left: 73px;
+width: 299px;
+height: 393px;
+}
+.leaf2{
+    top: 911px;
+margin-left: 521px;
+width: 247px;
+height: 424px;
+}
+.leaf3{
+    top: 928px;
+    margin-left: 917px;
+    width: 299px;
+height: 393px;
+}
+
+.first, .second, .third {
+    position: absolute;
+    z-index: 10;
+text-align: center;
+font: normal normal bold 35px/60px 'UNPGothicKS';
+color: #000000;
+top: 1102px;
+width: 450px;
+height: 46px;
+cursor: pointer;
+font-weight: 500;
+}
+.second {
+    top: 1069px;
+    margin-left: 420px;
+    height: 226px;
+}
+.third {
+    margin-left: 837px;}
+html {
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+      
+}
